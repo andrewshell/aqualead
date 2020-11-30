@@ -1,0 +1,14 @@
+<h1><span style="color:aqua; font-weight: bolder; background: black;">♄</span> Aqua Lead</h1>
+<p>An experimental visualization of OPML files.</p>
+
+<form method="post" action="/">
+<label for="opmlurl">OPML URL:</label>
+<input type="text" id="opmlurl" name="opmlurl">
+<button type="submit">Register</button>
+</form>
+
+<ul>
+{{#each outlines}}
+<li><a href="/{{this.md5}}">{{title}}</a>
+{{/each}}
+</ul>

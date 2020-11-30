@@ -1,0 +1,18 @@
+<h1>{{ title }}</h1>
+
+<div class="container">
+
+<dl>
+{{#each recents}}
+<dt>{{ created }}</dt>
+<dd><a href="/{{../md5hash}}/{{datestr created}}">{{ text }}</a></dd>
+{{/each}}
+</dl>
+
+<ul>
+{{#each subs}}
+<li><a href="/{{../md5hash}}/{{datestr created}}">{{ text }}</a></li>
+{{/each}}
+</ul>
+
+</div>
